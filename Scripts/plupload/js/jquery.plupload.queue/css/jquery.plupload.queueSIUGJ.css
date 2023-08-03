@@ -1,0 +1,117 @@
+
+
+.plupload_container .plupload_filelist
+{
+	height:185px !important;	
+	line-height:normal !important;
+	overflow-y: scroll !important;
+
+}
+
+
+.plupload_container .plupload_filelist_header,.plupload_container .plupload_filelist_footer, .plupload_container plupload_start
+{
+	display:inherit;
+}
+
+.plupload_container .plupload_droptext
+{
+	line-height: 23px !important;
+	padding:10px !important;
+}
+
+.plupload_filelist_header, .plupload_filelist_footer
+{
+	background: #E6EFFD !important;
+    border: 1px solid #FFFFFF !important;
+    height: 50px !important;
+    vertical-align: middle !important;
+}
+
+.plupload_filelist_header div
+{
+	font-family: Montserrat-Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    color: #3F5878;	
+    padding: 10px;
+
+}
+
+
+
+.plupload_filelist li 
+{
+    font-family: WorkSans-Regular;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    font-size: 14px !important;
+    color: #3E3E3E !important;
+    height: 50px;
+    background-color: #FFF;
+    vertical-align: middle !important;
+    padding: 0px;
+    padding-left: 10px;
+	background:#FFF;
+	
+}
+
+.plupload_filelist li  div
+{
+	height:30px;
+	border-right-color:#ededed !important;
+	border-right-style:solid;
+	border-right-width:1px;
+	padding:10px;
+	
+}
+
+.plupload_filelist li  div :last
+{
+	height:50px;
+	border-right-color:#F00 !important;
+	border-right-style:solid;
+	border-right-width:1px;
+}
+
+
+.plupload_container .plupload_filelist 
+{
+    height: 250px !important;
+    line-height: normal !important;
+    overflow-y: scroll !important;
+    background-color: #FFF;
+}
+
+.plupload_filelist .plupload_file_name 
+{
+    width: 405px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.plupload_filelist_footer .plupload_file_name, .plupload_filelist_footer .plupload_file_action, .plupload_filelist_footer .plupload_file_status, .plupload_file_size
+{
+	font-family: Montserrat-Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    color: #3F5878;	
+    padding: 10px;
+
+}
+
+.plupload_filelist_footer .plupload_progress, .plupload_filelist_footer .plupload_progress_bar
+{
+	padding:5px;
+}
+
+
+.plupload_filelist_footer .plupload_progress_bar 
+{
+   
+    background: #1A3E9A;
+}

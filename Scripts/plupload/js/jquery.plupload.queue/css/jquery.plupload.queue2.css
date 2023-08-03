@@ -1,0 +1,21 @@
+
+
+.plupload_container .plupload_filelist
+{
+	height:185px !important;	
+	line-height:normal !important;
+	overflow-y: scroll !important;
+
+}
+
+
+.plupload_container .plupload_filelist_header,.plupload_container .plupload_filelist_footer, .plupload_container plupload_start
+{
+	display:inherit;
+}
+
+.plupload_container .plupload_droptext
+{
+	line-height: 23px !important;
+	padding:10px !important;
+}

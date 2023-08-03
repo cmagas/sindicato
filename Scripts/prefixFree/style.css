@@ -1,0 +1,187 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+/* HTML5 display-role reset for older browsers */
+
+@font-face
+	{
+		font-family:'Lato-Regular';
+		src: local('Lato-Regular');
+		src: url('../../fuentes/Lato2OFL/Lato-Regular.ttf');
+		src: url('../../fuentes/Lato2OFL/Lato-Regular.ttf?#iefix') format('embedded-opentype'),
+		
+		
+	}
+
+@font-face
+	{
+		font-family:'Lato-Bold';
+		src: local('Lato-Bold');
+		src: url('../../fuentes/Lato2OFL/Lato-Bold.ttf');
+		src: url('../../fuentes/Lato2OFL/Lato-Bold.ttf?#iefix') format('embedded-opentype'),
+		
+		
+	}
+	
+@font-face
+{
+	font-family:'Lato-Regular';
+	src: url('../tipografias/SoberanaSans/SoberanaSans-Regular.otf');
+	src: url('../tipografias/SoberanaSans/SoberanaSans-Regular.otf?#iefix') format('embedded-opentype'),
+}
+
+.clearfix 
+{
+	clear: both;
+}
+
+.wrap {
+	width: 95%;
+	
+	padding:0px;
+	border:1px solid #d1d1d1;
+}
+
+nav 
+{
+	background: -webkit-gradient(linear, center top, center bottom, from(#d278a0), to(#d278a0));
+	background-image: linear-gradient(#d278a0, #d278a0);
+	
+	
+	padding: 0 10px;
+	position: relative;
+}
+
+.menu li 
+{
+	float: left;	
+	position: relative;
+	text-align:left;
+	font-family:Lato-Regular;
+	
+	
+	
+	
+}
+
+.menu li a 
+{
+	color: #1F3100;
+	display: block;
+	font-size: 13px;
+	line-height: 20px;
+	padding: 3px 12px;
+	margin: 4px 4px;
+	vertical-align: middle;
+	text-decoration: none;
+	font-family:Lato-Regular;	
+}
+
+
+
+/* Dropdown styles */
+
+.menu ul 
+{
+	position: absolute;
+	left: -9999px;
+	list-style: none;	
+	opacity: 1;
+	width:250px;
+	transition: opacity 1s ease;
+	z-index:10000;
+	font-family:Lato-Regular;
+	border:1px solid #ca5d8f
+	
+}
+
+.menu ul li 
+{
+	float: none;
+	width:250px;
+	font-family:Lato-Regular;
+	border-bottom-style:dotted;
+	border-bottom-color:#ca5d8f;
+	border-bottom-width:1px;
+	
+	
+}
+
+.menu ul li:last-child
+{
+	border-bottom-style:none;
+}
+
+.menu ul a 
+{
+	white-space: nowrap;
+	font-family:Lato-Regular;
+	overflow:hidden;
+	word-wrap:break-word;
+	white-space:normal;
+}
+
+/* Displays the dropdown on hover and moves back into position */
+.menu li:hover ul 
+{
+	background: rgba(210,120,160,1);
+	left: 5px;
+	opacity: 1;
+	font-family:Lato-Regular;
+
+}
+
+/* Persistant Hover State */
+.menu li:hover a 
+{
+	background: -webkit-gradient(linear, center top, center bottom, from(#c7558a), to(#c7558a));
+	background-image: linear-gradient(#c7558a, #c7558a);
+	color: #222;
+	font-family:Lato-Regular;
+}
+
+.menu li:hover ul a 
+{
+	background: none;
+	border-radius: 0;
+	box-shadow: none;
+	font-family:Lato-Regular;
+}
+
+.menu li:hover ul li a:hover 
+{
+	background: -webkit-gradient(linear, center top, center bottom, from(#c7558a), to(#c7558a));
+	background-image: linear-gradient(#c7558a, #c7558a);
+	/*border-radius: 12px;*/
+	border-radius: 0px;
+	box-shadow: inset 0px 0px 4px 2px rgba(0,0,0,0.3);
+	font-family:Lato-Regular;
+	
+}
+
+.menu ul ul
+{
+	display:none;
+	position: absolute;
+	left: 250px !important;
+	top: -3px;	
+	opacity: 1;
+	float:left;
+	transition: opacity 1s ease;
+	z-index:10000;
+	font-family:Lato-Regular;
+	
+}
+
+.menu li ul li:hover ul
+{
+	display:block;
+}
+
+
+
+
+

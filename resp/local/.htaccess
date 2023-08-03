@@ -1,0 +1,36 @@
+RewriteEngine on
+php_value max_execution_time 1000
+php_value max_input_time 1000
+php_value upload_max_filesize 100M
+php_value max_execution_time 7200
+php_value post_max_size 100M
+
+<IfModule mod_deflate.c>
+	AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/x-javascript application/javascript
+</IfModule>
+
+php_flag display_errors On
+php_value include_path "C:\AppServ\www\_Sindicato\include"
+
+AddType application/x-compress .Z
+AddType application/x-gzip .gz .tgz
+
+AddEncoding x-gzip .jgz
+AddType application/x-javascript .jgz
+
+AddEncoding x-gzip .cgz
+AddType text/css .cgz
+
+ExpiresActive On
+ExpiresDefault A0
+
+<FilesMatch "\.jgz$">
+ExpiresDefault A29030400
+Header append Cache-Control "public"
+</FilesMatch>
+
+<FilesMatch "\.cgz$">
+ExpiresDefault A29030400
+Header append Cache-Control "public"
+</FilesMatch>
+

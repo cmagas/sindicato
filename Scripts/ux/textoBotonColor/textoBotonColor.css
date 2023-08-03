@@ -1,0 +1,28 @@
+.x-color-picker, .x-color-picker 
+{
+  height: 195px;
+  position: relative;
+  overflow: hidden;
+}
+.x-color-picker div canvas 
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.x-color-picker-wheel 
+{
+  z-index: 1;
+}
+.x-color-picker-gradient  
+{
+  z-index: 0;
+}
+
+
+.x-form-TextoBotonColor-trigger
+{
+	background: transparent url(../images/color-trigger.gif) no-repeat 0 0 !important;
+	cursor: pointer;
+}

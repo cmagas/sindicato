@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http: //www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http: //www.w3.org/1999/xhtml" xml: lang="en" lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="../resources/css/ext-all.css" />
+<link rel="stylesheet" type="text/css" href="GroupHeaderPlugin.css" />
+<script type="text/javascript" src="../adapter/ext/ext-base.js"></script>
+<script type="text/javascript" src="../ext-all.js"></script>
+<script type="text/javascript" src="GroupHeaderPlugin.js"></script>
+<script type="text/javascript">
+Ext.BLANK_IMAGE_URL = '../resources/images/default/s.gif';
+Ext.onReady(function() {
+	new Ext.Viewport({
+		layout: 'border',
+		items: [{
+			region: 'center',
+			xtype: 'grid',
+			title: 'GroupHeaderPlugin Example',
+			store: new Ext.data.SimpleStore({
+				fields: ['id', 'nr1', 'text1', 'info1', 'special1', 'nr2', 'text2', 'info2', 'special2', 'special3', 'changed'],
+				data: [
+					['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11']
+				]
+			}),
+			colModel: new Ext.grid.ColumnModel({
+				columns: [
+					{header: 'Id', width: 25, dataIndex: 'id'},
+					{header: 'Nr', width: 25, dataIndex: 'nr1'},
+					{header: 'Text', width: 50, dataIndex: 'text1'},
+					{header: 'Info', width: 50, dataIndex: 'info1'},
+					{header: 'Special', width: 60, dataIndex: 'special1'},
+					{header: 'Nr', width: 25, dataIndex: 'nr2'},
+					{header: 'Text', width: 50, dataIndex: 'text2'},
+					{header: 'Info', width: 50, dataIndex: 'info2'},
+					{header: 'Special', width: 60, dataIndex: 'special2'},
+					{header: 'Special', width: 60, dataIndex: 'special3'},
+					{header: 'Changed', width: 50, dataIndex: 'changed'}
+				],
+				defaultSortable: true
+			}),
+			viewConfig: {
+				forceFit: true
+			},
+			plugins: [new Ext.ux.plugins.GroupHeaderGrid({
+				rows: [
+					[
+						{},
+						{header: 'Before', colspan: 4, align: 'center', dataIndex: 'info1'},
+						{header: 'After', colspan: 4, align: 'center', dataIndex: 'info2'},
+						{colspan: 2}
+					], [
+						{},
+						{},
+						{header: 'Merchandise', colspan: 3, align: 'center'},
+						{},
+						{header: 'Merchandise', colspan: 3, align: 'center'},
+						{header: 'Sum', colspan: 2, align: 'center'}
+					]
+				],
+				hierarchicalColMenu: true
+			})]
+		}]
+	});
+});
+</script>
+</head>
+<body>
+</body>
+</html>
